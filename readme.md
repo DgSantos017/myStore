@@ -34,3 +34,4 @@
 - customização de erros
 - links
 - melhorar os nomes
+- validations
