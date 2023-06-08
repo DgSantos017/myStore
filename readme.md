@@ -23,3 +23,14 @@
 - Models
 - Repositories
 - Validations
+
+#### todo
+- testes
+- auth
+- swagger
+- deploy
+- paginação
+- Filtros
+- customização de erros
+- links
+- melhorar os nomes
