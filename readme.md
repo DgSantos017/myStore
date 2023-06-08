@@ -4,7 +4,7 @@
 ## Tecnologias
 - Java (JDK) 17
 - Spring boot 3
-- Spring Framework | Web | Security
+- Spring Framework | Web | Security | Data JPA
 - PostgreSQL
 - Junit (para testes unitários)
 
@@ -29,9 +29,8 @@
 - auth
 - swagger
 - deploy
-- paginação
 - Filtros
 - customização de erros
-- links
-- melhorar os nomes
-- validations
+- links HATEOS
+- relacionamentos 1-1, 1-N, N-N
+- Cloud (tópico avançado)
