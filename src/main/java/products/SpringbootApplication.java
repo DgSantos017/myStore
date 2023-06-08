@@ -10,8 +10,3 @@ public class SpringbootApplication {
 		SpringApplication.run(SpringbootApplication.class, args);
 	}
 }
-
-// paginação
-// Filtros
-// customização de erros
-// camadas service

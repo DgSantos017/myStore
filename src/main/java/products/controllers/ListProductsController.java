@@ -1,5 +1,6 @@
 package products.controllers;
 
+import org.springframework.web.bind.annotation.RequestParam;
 import products.models.ProductModel;
 import products.services.ListProductsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +16,10 @@ public class ListProductsController {
     ListProductsService listProductsService;
 
     @GetMapping("/products")
-    public ResponseEntity<List<ProductModel>> getAllProducts() {
-        List<ProductModel> productsList = listProductsService.getAllProducts();
+    public ResponseEntity<List<ProductModel>> getAllProducts(@RequestParam(defaultValue = "0") int page,
+                                                             @RequestParam(defaultValue = "10") int size) {
+        List<ProductModel> productsList = listProductsService.getAllProducts(page, size);
         return ResponseEntity.status(HttpStatus.OK).body(productsList);
     }
+
 }
