@@ -6,7 +6,7 @@
 - Spring boot 3
 - Spring Framework | Web | Security | Data JPA
 - PostgreSQL
-- Junit (para testes unitários)
+- JUnit 5 
 
 ## Ferramentas
 - spring initializr
