@@ -1,6 +1,7 @@
 package products.services;
 
 import products.dtos.ProductRecordDto;
+import products.exceptions.RequiredObjectIsNullException;
 import products.models.ProductModel;
 import products.repositories.ProductRepository;
 import org.springframework.beans.BeanUtils;
@@ -15,6 +16,7 @@ public class CreateProductService {
     private ProductRepository productRepository;
 
     public ResponseEntity<ProductModel> createProduct(ProductRecordDto productRecordDto) {
+        if (productRecordDto == null) throw new RequiredObjectIsNullException();
         var productModel = new ProductModel();
         BeanUtils.copyProperties(productRecordDto, productModel);
         return ResponseEntity.status(HttpStatus.CREATED).body(productRepository.save(productModel));

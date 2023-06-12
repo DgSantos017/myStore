@@ -18,7 +18,7 @@ public class UpdateProductController {
 
     @PutMapping("/products/{id}")
     public ResponseEntity<Object> updateProduct(@PathVariable(value = "id") UUID id,
-                                                @RequestBody @Valid ProductRecordDto productRecordDto) {
+                                                @RequestBody  ProductRecordDto productRecordDto) {
         return updateProductService.updateProduct(id, productRecordDto);
     }
 }

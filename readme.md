@@ -30,7 +30,10 @@
 - swagger
 - deploy
 - Filtros
-- customização de erros
 - links HATEOS
 - relacionamentos 1-1, 1-N, N-N
 - Cloud (tópico avançado)
+- tratar a edição para permitir campos individuais
+- adicionar Migrations
+- Adicionar Docker e Kubernets
+- padronizar a hora globalmente e por edição na request put

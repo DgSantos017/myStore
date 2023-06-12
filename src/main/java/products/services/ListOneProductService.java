@@ -1,5 +1,7 @@
 package products.services;
 
+import products.exceptions.RequiredObjectIsNullException;
+import products.exceptions.ResourceNotFoundException;
 import products.models.ProductModel;
 import products.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +20,7 @@ public class ListOneProductService {
     public ResponseEntity<Object> getOneProduct(UUID id) {
         Optional<ProductModel> productO = productRepository.findById(id);
         if (productO.isEmpty()) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Product not found.");
+            throw new ResourceNotFoundException("Product Not Found");
         }
         return ResponseEntity.status(HttpStatus.OK).body(productO.get());
     }

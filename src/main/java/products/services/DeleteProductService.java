@@ -1,5 +1,6 @@
 package products.services;
 
+import products.exceptions.ResourceNotFoundException;
 import products.models.ProductModel;
 import products.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,7 @@ public class DeleteProductService {
     public ResponseEntity<Object> deleteProduct(UUID id) {
         Optional<ProductModel> productO = productRepository.findById(id);
         if (productO.isEmpty()) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Product not found.");
+            throw new ResourceNotFoundException("Product Not Found");
         }
         productRepository.delete(productO.get());
         return ResponseEntity.status(HttpStatus.NO_CONTENT).body("");
