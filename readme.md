@@ -37,3 +37,4 @@
 - adicionar Migrations
 - Adicionar Docker e Kubernets
 - padronizar a hora globalmente e por edição na request put
+- tratar de não adicionar produtos repetidos
