@@ -23,6 +23,8 @@
 - Models
 - Repositories
 - Validations
+- Exceptions
+- Utils
 
 #### todo
 - testes
@@ -30,7 +32,6 @@
 - swagger
 - deploy
 - Filtros
-- links HATEOS
 - relacionamentos 1-1, 1-N, N-N
 - Cloud (tópico avançado)
 - tratar a edição para permitir campos individuais
