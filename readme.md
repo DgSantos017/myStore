@@ -34,6 +34,7 @@
 - Filtros
 - relacionamentos 1-1, 1-N, N-N
 - Cloud ( AWS de preferencia )
+- Servereless
 - permitir editar também atributos individuais
 - adicionar Migrations
 - Adicionar Docker e Kubernets
