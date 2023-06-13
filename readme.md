@@ -4,7 +4,7 @@
 ## Tecnologias
 - Java (JDK) 17
 - Spring boot 3
-- Spring Framework | Web | Security | Data JPA
+- Spring Framework | Web | Security | Data JPA 
 - PostgreSQL
 - JUnit 5 
 
@@ -33,9 +33,10 @@
 - deploy
 - Filtros
 - relacionamentos 1-1, 1-N, N-N
-- Cloud (tópico avançado)
-- tratar a edição para permitir campos individuais
+- Cloud ( AWS de preferencia )
+- permitir editar também atributos individuais
 - adicionar Migrations
 - Adicionar Docker e Kubernets
-- padronizar a hora globalmente e por edição na request put
-- tratar de não adicionar produtos repetidos
+- padronizar a hora globalmente 
+- Registrar a hora de editar um recurso
+- Não permitir adicionar campos individuais
